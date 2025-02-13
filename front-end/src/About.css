@@ -1,0 +1,17 @@
+.title {
+    margin-bottom: 1rem;
+}
+
+.image {
+    width: 7rem;
+    height: auto;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.paragraphs {
+    margin-top: 1rem;
+}
+.paragraphs > p {
+    margin-bottom: 1rem;
+}

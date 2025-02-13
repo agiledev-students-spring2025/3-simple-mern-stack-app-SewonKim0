@@ -1,9 +1,17 @@
+import { useState, useEffect } from 'react';
+import './About.css';
+
 export default function About() {
     return <div>
-        <h1> About Us </h1>
+        <h1 className="title"> About Us </h1>
 
-        <img />
+        <img src="./images/sewon.jpg" className="image" />
 
-        <p> Hi, my name is Sewon Kim and I am a junior studying computer science at CAS. </p>
+        <div className="paragraphs">
+            <p> p </p>
+            <p> p </p>
+            <p> p </p>
+            <p> p </p>
+        </div>
     </div>
 }
