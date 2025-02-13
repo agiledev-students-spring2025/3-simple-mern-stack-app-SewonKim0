@@ -22,6 +22,17 @@ mongoose
 const { Message } = require('./models/Message')
 const { User } = require('./models/User')
 
+// a route to handle fetching of about us data
+app.get('/about-us', (req, res) => {
+  res.json({
+    paragraphs: [
+      "Hi, my name is Sewon Kim and I am a junior at CAS studying computer science and minoring in web programming & applications. I have a passion in creative development and enjoy creating web/mobile applications in my spare time. Similarly, I am also a passionate composer.",
+      "My musical background has allowed me to develop a strong sense of creativity and desire to produce new content. I have actively played the piano, clarinet, and oboe and am currently learning music theory in order to improve my composing skills.",
+    ],
+    imageUrl: "./images/sewon.jpg",
+  })
+})
+
 // a route to handle fetching all messages
 app.get('/messages', async (req, res) => {
   // load all messages from database
