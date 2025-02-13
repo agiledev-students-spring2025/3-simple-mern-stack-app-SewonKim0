@@ -24,6 +24,11 @@ const App = props => {
               path="/messages/:messageId"
               element={<MessageStandalone />}
             />
+
+            <Route
+              path="/about-us"
+              element={<h1> ABOUT ME </h1>}
+            />
           </Routes>
         </main>
         <Footer />
